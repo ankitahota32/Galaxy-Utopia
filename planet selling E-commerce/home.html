@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            background-color: rgb(8, 8, 15);
+            color: rgb(188, 167, 192);
+        }
+        .first{
+            display:flex;
+            justify-content: space-around;
+            margin: 100px;
+        }
+        .first div{
+           width:30%;
+    
+        }
+        .leftsection{
+            background-color: rgb(30, 30, 50);
+            font-size: 3rem;
+            text-decoration: wavy;
+            margin:10px;
+            
+        }
+        .rightsection img{
+            width: 80%;
+            margin:50px 0;
+        }
+
+    </style>
+</head>
+<body>
+ <main>
+    <section class="first">
+        <div class="leftsection">
+            <i>Galaxy Utopia</i>
+            <span id="element"></span>
+        </div>
+       
+        <div class="rightsection">
+            <img src="pngegg (4).png">
+        </div>
+    </section>
+ </main>
+ <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <script>
+    var typed = new Typed('#element', {
+      strings: ['DISCOVER YOUR NEW WORLD AT OUR STORE.', '-WHERE THE PLANET OF YOUR DREAMS AWAITS.'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Utopia</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: bold;
+            color: rgb(181, 184, 187);
+        }
+
+        body {
+            background-color: rgb(34, 34, 35);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        header {
+            height: 70px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-bottom: 1px solid rgb(78, 75, 75);
+        }
+        .nav{
+            background-color: rgb(18, 18, 23);
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        ul li a {
+            margin: 0 10px;
+            border: 2px solid rgb(248, 246, 243);
+            padding: 0px 15px;
+            border-radius: 40%;
+
+        }
+
+        .signup {
+            background-color: white;
+            color: black;
+        }
+
+        .signup:hover {
+            background-color: black;
+            color: white;
+        }
+
+        ul li a:hover {
+            background-color: rgb(39, 12, 47);
+        }
+
+        .first {
+            background-color: rgb(14, 14, 30);
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            margin: 10px 140px;
+            flex-wrap: wrap;
+        }
+
+        .first h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+
+        .first p {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 31px;
+            margin: 25px 0px;
+        }
+
+        .contentleft {
+            flex: 1
+        }
+
+        .contentmid {
+            flex: 2
+        }
+
+        .contentright {
+            flex: 1
+        }
+
+        .contentleft1 {
+            flex: 1
+        }
+
+        .contentmid1 {
+            flex: 2
+        }
+
+        .contentright1 {
+            flex: 1
+        }
+
+        .merc {
+            max-width: 150px;
+            height: auto
+        }
+
+        .ven {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            background-color: white;
+            outline: none;
+            border: none;
+            color: black;
+            border-radius: 50px;
+            margin: 2px;
+            font-weight: 700;
+            background-color: white;
+            color: black;
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .second {
+            background-color: rgb(21, 21, 36);
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            margin: 10px 140px;
+            flex-wrap: wrap;
+        }
+        
+        .second h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .second p {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 31px;
+            margin: 25px 0px;
+        }
+
+        .contentleft1 h2 {
+            flex-direction: column;
+        }
+
+        .contentmid1 p {
+            flex-direction: column;
+        }
+
+        .contentright1 {
+            flex-direction: column;
+        }
+        .third{
+            background-color: rgb(23, 23, 35);
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            margin: 10px 140px;
+            flex-wrap: wrap;
+        }
+        .third h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .third p {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 31px;
+            margin: 25px 0px;
+        }
+
+        .contentleft2 h2 {
+            flex-direction: column;
+        }
+
+        .contentmid2 p {
+            flex-direction: column;
+        }
+
+        .contentright2 {
+            flex-direction: column;
+        }
+        .contentleft2 {
+            flex: 1
+        }
+
+        .contentmid2 {
+            flex: 2
+        }
+
+        .contentright2 {
+            flex: 1
+        }
+        .fourth{
+            background-color: rgb(27, 27, 48);
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            margin: 10px 140px;
+            flex-wrap: wrap;
+        }
+        .fourth h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .fourth p {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 31px;
+            margin: 25px 0px;
+        }
+        .contentleft3 h2 {
+            flex-direction: column;
+        }
+
+        .contentmid3 p {
+            flex-direction: column;
+        }
+
+        .contentright3 {
+            flex-direction: column;
+        }
+        .contentleft3 {
+            flex: 1
+        }
+
+        .contentmid3 {
+            flex: 2
+        }
+
+        .contentright3 {
+            flex: 1
+        }
+
+        .fifth{
+            background-color: rgb(31, 31, 64);
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            margin: 10px 140px;
+            flex-wrap: wrap;
+        }
+        .fifth h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .fifth p {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 31px;
+            margin: 25px 0px;
+        }
+        .contentleft4 h2 {
+            flex-direction: column;
+        }
+
+        .contentmid4 p {
+            flex-direction: column;
+        }
+
+        .contentright4 {
+            flex-direction: column;
+        }
+        .contentleft4 {
+            flex: 1
+        }
+
+        .contentmid4 {
+            flex: 2
+        }
+
+        .contentright4 {
+            flex: 1
+        }
+
+        .six{
+            background-color: rgb(38, 38, 84);
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            margin: 10px 140px;
+            flex-wrap: wrap;
+        }
+        .six h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .six p {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 31px;
+            margin: 25px 0px;
+        }
+        .contentleft5 h2 {
+            flex-direction: column;
+        }
+
+        .contentmid5 p {
+            flex-direction: column;
+        }
+
+        .contentright5 {
+            flex-direction: column;
+        }
+        .contentleft5 {
+            flex: 1
+        }
+
+        .contentmid5 {
+            flex: 2
+        }
+
+        .contentright5 {
+            flex: 1
+        }
+
+        .seven{
+            background-color: rgb(40, 40, 90);
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            margin: 10px 140px;
+            flex-wrap: wrap;
+        }
+        .seven h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        .seven p {
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 31px;
+            margin: 25px 0px;
+        }
+        .contentleft6 h2 {
+            flex-direction: column;
+        }
+
+        .contentmid6 p {
+            flex-direction: column;
+        }
+
+        .contentright6 {
+            flex-direction: column;
+        }
+        .contentleft6 {
+            flex: 1
+        }
+
+        .contentmid6 {
+            flex: 2
+        }
+
+        .contentright6 {
+            flex: 1
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="nav">
+        <div class="logo"><img src="galaxy img.png" width="40px" height="40px"></a></div>
+        <nav>
+
+
+            <ul>
+                <li class="nav1"><a href="home.html"> Home </a></li>
+                <li class="nav2"><a href="about.html"> About us </a></li>
+                <li class="nav3"><a href="/"> Offers </a></li>
+                <li class="nav4"><a href="contact.html"> Contact Us </a></li>
+                <li><a href="/" class="signup"> Sign Up </a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="first">
+            <div class="contentleft">
+                <h2>Mercury</h2>
+            </div>
+            <div class="contentmid">
+                <p>Planet Mercury, the smallest and innermost planet in our solar system, <br>orbits the Sun at an
+                    average distance of about 58 million kilometers (36 million miles).<br> Despite its proximity to the
+                    Sun, Mercury experiences extreme<br> temperature fluctuations, ranging from about -173°C (-280°F)
+                    at<br> night to 427°C (800°F) during the day, due to<br> its thin atmosphere, which is incapable of
+                    trapping heat.<br> This rocky planet is heavily cratered, reminiscent of our Moon,<br> with a
+                    surface scarred by impacts from comets and asteroids. </p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright">
+                <img src="messenger-earth-mercury-planet-solar-system-solar-system-d8ff25885353e3c85ba3531ade49df7f.png"
+                    height="30px" witdh="20px" class="merc">
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="contentleft1">
+                <h2>Venus</h2>
+            </div>
+            <div class="contentmid1">
+                <p>Venus, often called Earth's "sister planet" due to their<br> similar size and composition, is the
+                    second planet from the Sun.<br> Shrouded in a thick, toxic atmosphere dominated by carbon
+                    dioxide<br> and sulfuric acid clouds, Venus experiences extreme <br>greenhouse effects, resulting in
+                    surface temperatures<br> exceeding 465°C (869°F), hotter than Mercury despite being farther<br> from
+                    the Sun.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright1">
+                <img src="pngegg (2).png" height="200px" witdh="90px" class="ven">
+            </div>
+        </div>
+
+         <div class="third">
+            <div class="contentleft2">
+                <h2>Earth</h2>
+            </div>
+            <div class="contentmid2">
+                <p>Earth, the third planet from the Sun, is a vibrant and diverse <br>world teeming with life. It is unique in our solar system due <br>to its abundant liquid water, which covers about 71% of <br>its surface, forming vast oceans, lakes, and rivers.<br> Earth's atmosphere, composed mainly of nitrogen and oxygen, <br>>supports a rich tapestry of ecosystems and climates,<br> from lush rainforests to arid deserts. The planet's dynamic geology,<br> characterized by tectonic plate movements, volcanic activity,<br> and erosion, continuously reshapes its landscapes.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright2">
+                <img src="pngwing.com (2).png" height="200px" witdh="90px" class="earth">
+            </div>
+        </div>
+
+        <div class="fourth">
+            <div class="contentleft3">
+                <h2>Mars</h2>
+            </div>
+            <div class="contentmid3">
+                <p>Mars, often called the "Red Planet," is the fourth planet from the Sun<br> and a focal point of scientific intrigue and exploration.<br> Its reddish hue, visible even from Earth, is due to iron oxide<br> or rust covering its surface. Mars boasts an array of <br>fascinating geological features, including Olympus Mons, <br>the tallest volcano in the solar system, and Valles Marineris,<br> a canyon system stretching over 4,000 kilometers.<br> The planet's thin atmosphere, composed mostly of carbon dioxide, <br>results in extreme temperature variations and <br>low atmospheric pressure.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright3">
+                <img src="pngegg (3).png" height="200px" witdh="90px" class="earth">
+            </div>
+        </div>
+
+        <div class="fifth">
+            <div class="contentleft4">
+                <h2>Jupiter</h2>
+            </div>
+            <div class="contentmid4">
+                <p>Jupiter, the largest planet in our solar system, is a gas giant renowned<br> for its immense size and captivating features. It has a diameter of about<br> 142,984 kilometers, making it more than 11 times wider than Earth.<br> Jupiter's composition is predominantly hydrogen and helium,<br> lacking a solid surface, and it has a dense core surrounded<br> by a vast atmosphere. The planet is famous for its Great Red Spot,<br> a colossal storm larger than Earth that has raged for centuries.<br> Jupiter's atmosphere is marked by colorful bands and<br> turbulent cloud patterns created by its rapid rotation,<br> which completes a day in just under 10 hours.</p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright4">
+                <img src="—Pngtree—planet jupiter created with generative_14616087.png" height="200px" witdh="90px" class="earth">
+            </div>
+        </div>
+
+        <div class="six">
+            <div class="contentleft5">
+                <h2>Saturn</h2>
+            </div>
+            <div class="contentmid5">
+                <p>Saturn, the sixth planet from the Sun, is instantly recognizable by <br>its stunning ring system, the most extensive and complex in our<br> solar system. This gas giant, second in size only to Jupiter,<br> has a diameter of about 116,460 kilometers and <br>is composed primarily of hydrogen and helium. Saturn's rings,<br> made up of ice and rock particles ranging from tiny grains <br>to large boulders, create a mesmerizing spectacle visible <br>even through small telescopes. The planet's atmosphere features bands<br> of clouds and turbulent storms, with winds reaching <br>speeds of over 1,800 kilometers per hour. </p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright5">
+                <img src="Saturn_PNG_Clip_Art-2998.png" height="200px" witdh="90px" class="earth">
+            </div>
+        </div>
+
+        <div class="seven">
+            <div class="contentleft6">
+                <h2>Uranus</h2>
+            </div>
+            <div class="contentmid6">
+                <p>Saturn, the sixth planet from the Sun, is instantly recognizable by <br>its stunning ring system, the most extensive and complex in our<br> solar system. This gas giant, second in size only to Jupiter,<br> has a diameter of about 116,460 kilometers and <br>is composed primarily of hydrogen and helium. Saturn's rings,<br> made up of ice and rock particles ranging from tiny grains <br>to large boulders, create a mesmerizing spectacle visible <br>even through small telescopes. The planet's atmosphere features bands<br> of clouds and turbulent storms, with winds reaching <br>speeds of over 1,800 kilometers per hour. </p>
+                <button class="btn">Buy Now</button>
+            </div>
+            <div class="contentright6">
+                <img src="pngwing.com (3).png" height="200px" witdh="90px" class="earth">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
